@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/CSS/Register.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" >
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="navbar-image" src="/PICTURE/logo.png" alt="" />
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="Home.html" class="home">Home</a></li>
+                    <li><a href="Songs.html">Songs</a></li>
+                    <li><a href="AboutUs.html" class="about-us">About Us</a></li>
+                    <div class="register">
+                        <li><a href="Register.html">Sign Up</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <div class="form-box">
+            <div class="form-title">
+                <h2>Welcome</h2>
+                <p>Welcome to Willify <br> Find your music journey here</p>
+            </div>
+            <div class="form-content">
+                <h2>Sign Up</h2>
+                <form id="registration">
+                    <div class="input-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <span id="name-error" class="error"></span>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                        <span id="email-error" class="error"></span>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span id="password-error" class="error"></span>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <span id="gender-error" class="error"></span>
+                    </div>
+                    
+                    <div class="input-form">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+                        <span id="age-error" class="error"></span>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="/JS/Register.js"></script>
+</body>
+</html>

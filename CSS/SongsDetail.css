@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #d2deeb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #EDF2F4;
+    background-color: #152B42;
+    padding: .1rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    box-shadow: #6BA2CB 0 0 20px;
+}
+
+.navbar-image{
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color:#EDF2F4;
+    padding: 1rem;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-links li a:hover {
+    color: #FFC300;
+}
+
+.container{
+    margin: 80px 30px 30px 30px;
+    padding: 10px;
+    color: #152B42;
+}
+
+.information{
+    display: flex;
+    margin: 30px;
+}
+
+.information img{
+    border-radius: 20px;
+    margin-right: 50px;
+    height: 300px;
+    width: 300px;
+    border: #152B42 4px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title h1{
+    font-size: 100px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.title p{
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.artist-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 55%;
+    height: 40%;
+    border-radius: 10%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: #152B42 3px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.artist-container h2{
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+
+.artist{
+    margin-bottom: 20px;
+    color: #152B42;
+}
+
+.lyric{
+    margin: 45px;
+    color: #152B42;
+}
+
+.lyric h2{
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.lyric p{
+    font-size: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px;
+}
+
+.button button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    background-color:#EDF2F4;
+    color:#152B42;
+    width: 90px;
+    font-weight: 600;
+}
+
+.button button:hover{
+    background-color:#152B42;
+    color:#EDF2F4;
+}
+
+footer{
+    background-color: #152B42;
+    color:#EDF2F4;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navigation ul{
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.footer-navigation li {
+    list-style: none;
+}
+
+.footer-navigation li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.social-media{
+    margin-right: 40px;
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.instagram img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.instagram a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+}
+
+.facebook img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.facebook a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.twitter{
+    display: flex;
+    align-items: center;
+}
+
+.twitter img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.twitter a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+@media(max-width:768px){
+
+    .navbar li a{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .information img{
+        margin-right: 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    .title h1{
+        font-size: 35px;
+    }
+
+    .title p{
+        text-align: center;
+    }
+
+    .lyric h2{
+        font-size: 30px;
+    }
+
+    .lyric p{
+        font-size: 20px;
+    }
+
+    .artist-container{
+        width: 80%;
+        height: 100%;
+        margin-left: 0;
+    }
+}
